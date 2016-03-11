@@ -36,18 +36,20 @@ class viewEvents: UIViewController {
         print(strDate)
         
         if count > 0 {
-            for var i = 0; i < count; ++i {
-                let date = events[i]
-                var index = date.endIndex.advancedBy(-6)
-                var substring = date.substringToIndex(index)
-                var splitArr = substring.componentsSeparatedByString(": ")
-                print(splitArr[1])
-                if (strDate == splitArr[1]){
-                    textView.text = textView.text + events[i] + "\n"
-                }
-//                else{
-//                    textView.text = "There are no events today, dogg!"
-//                }
+            for var i = 0; i < events.count; ++i {
+                //if events.count >= count{
+                    let date = events[i]
+                    var index = date.endIndex.advancedBy(-10)
+                    var substring = date.substringToIndex(index)
+                    var splitArr = substring.componentsSeparatedByString(": ")
+                    var eventDate = splitArr[1].stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                    if (strDate == eventDate){
+                        textView.text = textView.text + splitArr[0] + ": " + splitArr[1] + "\n"
+                    }
+    //                else{
+    //                    textView.text = "There are no events today, dogg!"
+    //                }
+                //}
             }
         }
         else{

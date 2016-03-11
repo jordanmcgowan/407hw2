@@ -26,27 +26,33 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98h-hM-n0C">
                                 <rect key="frame" x="200" y="153" width="201" height="30"/>
-                                <state key="normal" title="View Events on a Certain Day"/>
+                                <state key="normal" title="View Events on a Certain Day">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="Quo-AJ-NNo" kind="show" id="wAW-Gx-Dbb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjz-YR-tbn">
                                 <rect key="frame" x="265" y="199" width="70" height="30"/>
-                                <state key="normal" title="Add Event"/>
+                                <state key="normal" title="Add Event">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="fUi-b6-KzH" kind="show" id="Y7X-hl-lqq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJI-uH-SnA">
                                 <rect key="frame" x="204" y="244" width="194" height="30"/>
-                                <state key="normal" title="View all Events/Delete Event"/>
+                                <state key="normal" title="View all Events/Delete Event">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="eTp-Ep-tsJ" kind="show" id="awX-CX-XP9"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="EJI-uH-SnA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3C3-Ow-Oa4"/>
                             <constraint firstItem="98h-hM-n0C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cpr-Fy-EUr"/>
@@ -85,9 +91,14 @@
                             </tableView>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Z4-7M-f7q">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <color key="barTintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
                                 <items>
-                                    <navigationItem title="Delete Event" id="aO7-G4-dUz">
+                                    <navigationItem title="View All Events/Delete Event" id="aO7-G4-dUz">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="ixY-iE-3A7">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="3Iu-JD-B11"/>
                                             </connections>
@@ -97,14 +108,16 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmJ-na-SAk">
                                 <rect key="frame" x="248" y="497" width="105" height="30"/>
-                                <state key="normal" title="Delete Forever!"/>
+                                <state key="normal" title="Delete Forever!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="deleteClicked:" destination="eTp-Ep-tsJ" eventType="touchUpInside" id="3bz-CV-h5E"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="usu-39-URJ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4Z4-7M-f7q" firstAttribute="leading" secondItem="Byl-1D-4iB" secondAttribute="leadingMargin" constant="-20" id="4Yt-TD-49P"/>
                             <constraint firstItem="RK9-QV-mOm" firstAttribute="centerX" secondItem="Byl-1D-4iB" secondAttribute="centerX" id="Cbu-RM-cXj"/>
@@ -146,7 +159,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnk-cs-TW6">
                                 <rect key="frame" x="47" y="80" width="38" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l1s-vf-I04">
@@ -157,12 +170,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsT-6s-ZHP">
                                 <rect key="frame" x="47" y="156" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4Q-FH-4OH">
                                 <rect key="frame" x="265" y="465" width="70" height="30"/>
-                                <state key="normal" title="Add Event"/>
+                                <state key="normal" title="Add Event">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="addEventAction:" destination="fUi-b6-KzH" eventType="touchUpInside" id="Mhf-Q4-Nwv"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="y6T-ok-Jeu"/>
@@ -170,9 +185,14 @@
                             </button>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INQ-Oq-10j">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Add Event" id="spL-OB-9x2">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="dZC-qe-P3Q">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="JEq-dE-vun"/>
                                             </connections>
@@ -181,7 +201,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="l1s-vf-I04" firstAttribute="leading" secondItem="Dnk-cs-TW6" secondAttribute="trailing" constant="27" id="1A6-ho-kBg"/>
                             <constraint firstItem="Dnk-cs-TW6" firstAttribute="top" secondItem="Vum-HY-CPe" secondAttribute="bottom" constant="60" id="1AW-bj-NzL"/>
@@ -220,16 +240,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="No events today!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FB4-c1-csm">
-                                <rect key="frame" x="180" y="92" width="240" height="163"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="58" y="375" width="485" height="163"/>
+                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UnY-6k-nXr">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
                                 <items>
-                                    <navigationItem title="View Events" id="yGX-Yk-IRW">
+                                    <navigationItem title="View Events By Day" id="yGX-Yk-IRW">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="GLK-FU-GWh">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="ZrJ-Be-fnz"/>
                                             </connections>
@@ -237,8 +263,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qd1-iI-hGt">
-                                <rect key="frame" x="0.0" y="263" width="600" height="216"/>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qd1-iI-hGt">
+                                <rect key="frame" x="0.0" y="127" width="600" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="479330658.30695099">
                                     <!--2016-03-10 19:24:18 +0000-->
                                 </date>
@@ -246,16 +272,24 @@
                                     <action selector="datePicked:" destination="Quo-AJ-NNo" eventType="valueChanged" id="cGP-Su-UwZ"/>
                                 </connections>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iei-V7-uWw">
+                                <rect key="frame" x="58" y="83" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="FB4-c1-csm" firstAttribute="centerX" secondItem="hBt-cm-2kv" secondAttribute="centerX" id="12O-LZ-9ye"/>
                             <constraint firstItem="UnY-6k-nXr" firstAttribute="centerX" secondItem="hBt-cm-2kv" secondAttribute="centerX" id="8Sf-gE-Egr"/>
                             <constraint firstItem="UnY-6k-nXr" firstAttribute="width" secondItem="hBt-cm-2kv" secondAttribute="width" id="HNb-Eb-ehc"/>
                             <constraint firstItem="UnY-6k-nXr" firstAttribute="top" secondItem="2W2-SM-mVB" secondAttribute="bottom" id="JnX-qX-JQe"/>
-                            <constraint firstItem="FB4-c1-csm" firstAttribute="centerX" secondItem="hBt-cm-2kv" secondAttribute="centerX" id="KRY-hB-sr6"/>
-                            <constraint firstItem="qd1-iI-hGt" firstAttribute="centerX" secondItem="hBt-cm-2kv" secondAttribute="centerX" id="Ogu-xd-JU2"/>
-                            <constraint firstItem="qd1-iI-hGt" firstAttribute="top" secondItem="2W2-SM-mVB" secondAttribute="bottom" constant="243" id="jD6-BN-xeK"/>
-                            <constraint firstItem="FB4-c1-csm" firstAttribute="top" secondItem="2W2-SM-mVB" secondAttribute="bottom" constant="72" id="zD8-6S-5eU"/>
+                            <constraint firstItem="iei-V7-uWw" firstAttribute="top" secondItem="2W2-SM-mVB" secondAttribute="bottom" constant="63" id="NaB-Qi-94o"/>
+                            <constraint firstItem="FB4-c1-csm" firstAttribute="top" secondItem="qd1-iI-hGt" secondAttribute="bottom" constant="32" id="R5f-yk-9v9"/>
+                            <constraint firstItem="qd1-iI-hGt" firstAttribute="leading" secondItem="hBt-cm-2kv" secondAttribute="leadingMargin" constant="-20" id="bWA-6o-dxN"/>
+                            <constraint firstItem="qd1-iI-hGt" firstAttribute="centerX" secondItem="hBt-cm-2kv" secondAttribute="centerX" id="xas-zD-yw8"/>
+                            <constraint firstItem="iei-V7-uWw" firstAttribute="leading" secondItem="hBt-cm-2kv" secondAttribute="leadingMargin" constant="38" id="zoE-pL-IWV"/>
                         </constraints>
                     </view>
                     <connections>

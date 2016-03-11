@@ -35,10 +35,11 @@ class addEvent: UIViewController {
     }
     
     @IBAction func addEventAction(sender: AnyObject) {
-        eventArr = [eventTitle.text!, strDate]
+        eventArr = [eventTitle.text!, strDate, String(count)]
+        print("Events: ")
         print(eventArr)
         data.setValue(eventArr, forKey: "event " + String(count))
-        events.append(eventTitle.text! + ": " + strDate)
+        events.append(eventTitle.text! + ": " + strDate + "-->" + String(count))
         ++count
         tmp = count
         data.setValue(count, forKey: "count")
